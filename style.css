@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.navigation a {
+  color: rgb(226, 225, 225);
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navigation a:hover{
+  color: white;
+  border-bottom: 1px solid;
+  border-radius: 4px;
+  
+}
+
+.btnLogin-popup {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.btnLogin-popup:hover{
+  background-color: rgba(13, 13, 13, 0.629);
+}
+
+body{
+  background: url(/assets/body.png) no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#login-container{
+  display: none;
+  text-align: center;
+  background-color: rgba(16, 17, 17, 0.51);
+  padding: 80px;
+  border: 1px double;
+  box-shadow: 3px 5px 5px black;
+  border-radius: 8px;
+  color: white;
+}
+
+
+#login-container h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.login-informations span{
+  color: rgba(255, 255, 255, 0.741);
+  font-size: 12px;
+}
+
+.inputs {
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid;
+  padding-bottom: 4px;
+}
+
+.inputs::placeholder{
+  color: white;
+}
+
+.login-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo-login {
+  width: 150px;
+  height: 150px;
+}
+
+.informations{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.btnEntrar{
+  font-size: 16px;
+  padding: 3px;
+  background-color: rgb(99, 205, 99);
+  border: none;
+  border-radius: 4px;
+}

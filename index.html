@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login-Theras</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="./assets/logo.svg"/>
+    <nav class="navigation">
+      <a href="#Home">Página Inicial</a>
+      <a href="#About">Sobre Nós</a>
+      <a href="#Contact">Contato</a>
+      <button class="btnLogin-popup" onclick="MostrarLogin()">Login</button>
+    </nav>
+  </header>
+  <main onclick="EscondeLogin()">
+    <div id="login-container">
+      <h1>LOGIN</h1>
+      <div class="login-informations">
+        <div class="logo-login">
+          <img class="logo-login" src="./assets/logo.svg"/>
+        </div>
+        <div class="informations">
+        <label> </label>
+        <input class="inputs" placeholder="Usuário:" type="text">
+        <label> </label>
+        <input class="inputs" placeholder="Senha:" type="password">
+        <button class="btnEntrar">Entrar</button>
+        <span>*Aperte 'ESC' para sair</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>
